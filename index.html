@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header">
+        <div class="logo">
+            <img src="./images/logo1.jpg" alt="logo">
+        </div>
+        <div class="buttons">
+            <button id="sign-in" class="sign-in">Sign in</button>
+            <button id="sign-up" class="sign-up">Sign up</button>
+        </div>
+    </div>
+    <div class="container">
+        <button id="all-post" class="all-post"><a href="./html/bloglist.html" style="color: #000;">All
+                Posts</a></button>
+        <button id="create-post" class="all-post">Create Post</button>
+    </div>
+    <div id="sign-in-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p class="close">&times;</p>
+            <h2>Welcome Back!</h2>
+            <hr />
+            <form>
+                <div class="fluid-container">
+                    <label for="uname"><b>Username</b></label>
+                    <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+                    <button class="login-button" type="submit">Sign In</button>
+                </div>
+            </form>
+            <p class="form-footer"><b>Not a member? <a href="#">Sign up</a></b></p>
+        </div>
+    </div>
+
+    <div id="sign-up-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p class="close">&times;</p>
+            <h2>Welcome Back!</h2>
+            <hr />
+            <form>
+                <div class="fluid-container">
+                    <label for="full-name"><b>Full Name</b></label>
+                    <input id="full-name" type="text" placeholder="Enter Full Name" name="email" required>
+
+                    <label for="uname"><b>Username</b></label>
+                    <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Confirm Password</b></label>
+                    <input id="psw-repeat" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    <button type="submit" class="signup-button">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="create-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p class="close">&times;</p>
+            <h2>Pen Your Post</h2>
+            <div class="fluid-container">
+                <label><b>Title</b></label><br />
+                <input type="text" name="title" id="title" style="width: 60%; height: 30px; padding: 4px;"><br /><br />
+                <label><b>Content</b></label>
+                <textarea id="textare" name="textarea" rows="20" cols="50"></textarea>
+                <center><button class="post-button" type="submit">Create</button></center>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
