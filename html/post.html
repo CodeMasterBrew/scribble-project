@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/post.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../images/logo3.jpg" alt="logo">
+        </div>
+        <div class="buttons">
+            <button id="sign-in" class="sign-in">Sign in</button>
+            <button id="sign-up" class="sign-up">Sign up</button>
+        </div>
+    </div>
+    <center>
+        <h1>The legacy of Jimi Hendrix</h1>
+    </center>
+    <div class="container">
+        <p><b>Jimmi</b><button type="submit" id="edit-post" class="edit">Edit&nbsp;&nbsp;<i class="fa fa-edit"
+                    style="font-size: 18px;"></i></button></p>
+        <textarea id="desc" rows="10" cols="50"
+            disabled>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+        <div>
+                <button type="submit" id="like" class="like">&nbsp;&nbsp;<i class="fa fa-thumbs-up"
+                style="color: #fff; font-size: 18px;"></i> &nbsp;&nbsp;Like </button><br />
+                <span id="like-message"></span>
+        </div>
+        <textarea id="comment-area" name="comment-area" rows="6" cols="30"></textarea><br />
+        <button class="comment" type="submit">Comment</button>
+        <br /> <br />
+        <h4 style="margin: 6px 0;">All comments</h4>
+        <div class="main-div">
+            <div class="comment-1">Second comment</div>
+            <div class="comment-2">First comment</div>
+        </div>
+    </div>
+    <script src="../script/post.js"></script>
+</body>
+
+</html>
